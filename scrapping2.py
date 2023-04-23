@@ -22,7 +22,7 @@ for i in range(1, 11):
             filtered_data.append([cell.text.strip() for cell in cells])
 
 # Écrire les données filtrées dans un fichier CSV
-with open('filtered_data.csv', 'w', newline='') as file:
+with open('results.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Team Name', 'Year', 'Wins', 'Losses', 'Win%', 'Goals For(GF)', 'Goals Against(GA)', '+/-'])
     writer.writerows(filtered_data)
